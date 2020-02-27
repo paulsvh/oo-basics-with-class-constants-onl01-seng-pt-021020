@@ -3,11 +3,11 @@ class Shoe
   attr_reader :brand
 
   BRANDS = []
-  unique_brands = BRANDS.uniq
+  UNIQUE = BRANDS.uniq
 
   def initialize(brand)
     @brand = brand
-    unique_brands << brand
+    UNIQUE << brand
   end
 
   def cobble
